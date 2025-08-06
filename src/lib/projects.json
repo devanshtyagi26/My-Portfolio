@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "type": "Web Application",
+    "name": "E-Commerce Dashboard",
+    "description": "A responsive dashboard for managing an online store. It features real-time analytics, order tracking, and inventory management.",
+    "features": [
+      "Real-time sales charts",
+      "Order management system",
+      "User authentication"
+    ],
+    "technologies": ["Next.js", "React", "Tailwind CSS", "Zustand", "MongoDB"],
+    "liveLink": "https://example.com/project1",
+    "repoLink": "https://github.com/yourusername/project1"
+  },
+  {
+    "id": 2,
+    "type": "Mobile Game",
+    "name": "Space Invaders Clone",
+    "description": "A classic arcade game clone built for mobile browsers, featuring touch controls and a global leaderboard.",
+    "features": [
+      "Touch-based gameplay",
+      "High score system",
+      "Retro pixel art graphics"
+    ],
+    "technologies": ["HTML5 Canvas", "JavaScript", "Webpack"],
+    "liveLink": "https://example.com/project2",
+    "repoLink": "https://github.com/yourusername/project2"
+  },
+  {
+    "id": 3,
+    "type": "UI/UX Design",
+    "name": "Figma Portfolio Template",
+    "description": "A clean and modern portfolio template designed in Figma, focusing on a minimal aesthetic and intuitive user experience.",
+    "features": [
+      "Vector-based assets",
+      "Responsive design layouts",
+      "Customizable components"
+    ],
+    "technologies": ["Figma", "Adobe Illustrator"],
+    "liveLink": "https://www.figma.com/file/project3",
+    "repoLink": null
+  }
+]

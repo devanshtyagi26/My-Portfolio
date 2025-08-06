@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectCard() {
   return (
-    <div className="z-20 flex lg:flex-row flex-col lg:gap-3 border-[#2a1454] bg-darkBlue shadow-[#04030b] shadow-2xl p-4 md:p-6 lg:p-8 border rounded-xl w-full min-h-72">
+    <div className="z-20 flex lg:flex-row flex-col lg:gap-3 border-[#2a1454] bg-darkBlue shadow-[#04030b] shadow-2xl p-4 md:p-6 lg:p-8 border rounded-xl w-full min-h-72 relative">
       <div className="flex flex-col gap-2">
         <span className="hover:opacity-85 font-light text-[#8750f7] text-md">
           Project Type

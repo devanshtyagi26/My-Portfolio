@@ -3,7 +3,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center gap-4 mt-35">
+    <div className="flex flex-col justify-center items-center gap-4 mt-35 w-[80%] relative">
       <ProjectCard />
       <TechStack />
     </div>

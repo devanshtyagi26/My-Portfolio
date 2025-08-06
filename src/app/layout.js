@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-[80%] flex justify-center items-center dark:bg-black bg-white text-amber-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col justify-center items-center dark:bg-black bg-white text-amber-50`}
       >
         <ThemeProvider
           attribute="class"

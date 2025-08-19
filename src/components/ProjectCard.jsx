@@ -1,11 +1,24 @@
+"use client";
 import React from "react";
-import { Button } from "@/components/ui/button"; // Using shadcn/ui Button for potential enhancements
+import { useInView } from "@/lib/useInView";
+import { Button } from "@/components/ui/button";
 import { GitCommitHorizontal } from "lucide-react";
 import { ExternalLink, Github } from "lucide-react";
 
 function ProjectCard({ project }) {
+  const [ref, inView] = useInView({ threshold: 0.2 });
   return (
-    <div className="z-10 flex justify-center items-center lg:flex-row flex-col lg:gap-6 border-red-700/80 bg-gray-900 shadow-red-900/50 shadow-lg p-4 md:p-6 lg:p-8 border rounded-xl w-fit min-h-72 relative">
+    <div
+      ref={ref}
+      className={`z-10 flex justify-center items-center lg:flex-row flex-col lg:gap-6 border-red-700/80 bg-gray-900 shadow-red-900/50 shadow-lg p-4 md:p-6 lg:p-8 border rounded-xl w-fit min-h-72 relative transition-all duration-500 hover:shadow-[0_0_54px_4px_rgba(239,68,68,0.7)] hover:border-red-500
+        ${
+          inView
+            ? "opacity-100 scale-100 translate-y-0"
+            : "opacity-0 scale-90 translate-y-10"
+        }
+      `}
+      style={{ willChange: "opacity, transform" }}
+    >
       <div className="w-[100%] mb-4 flex flex-row-reverse justify-center items-center">
         <img
           src={project?.image || "sample.jpg"}
@@ -36,7 +49,7 @@ function ProjectCard({ project }) {
             {project?.technologies?.map((tech, index) => (
               <span
                 key={index}
-                className="gap-4 bg-red-700/80 hover:bg-red-500 px-3 py-2 rounded-full transition-all duration-300"
+                className="gap-4 bg-red-700/80 hover:bg-red-500 px-3 py-2 rounded-full transition-all duration-300 user-select-none"
               >
                 {tech}
               </span>

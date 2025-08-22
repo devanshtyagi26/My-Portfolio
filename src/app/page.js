@@ -7,6 +7,9 @@ export default function Home() {
     <div className="flex flex-col justify-center items-center gap-4 mt-35 w-[80%] relative">
       <AboutMe />
       <div className="grid grid-cols-1 gap-8 w-[80%]">
+        <p className="text-xl flex font-semibold text-[#fafafa99] letter-spacing-[.2em] mb-1 justify-center items-center font-geist-mono">
+          MY PROJECTS
+        </p>
         {projectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

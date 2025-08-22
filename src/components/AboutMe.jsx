@@ -43,35 +43,11 @@ function AboutMe() {
             Contact Me
           </button>
         </div>
-        <div className="flex flex-col justify-center gap-7">
-          <div className="flex flex-col gap-1">
-            <p className="text-xl font-semibold text-[#fafafa99] letter-spacing-[.2em] font-geist-mono">
-              KEY SKILLS
-            </p>
-            <ul className="list-none list-inside flex flex-wrap gap-2">
-              {keySkills.map((skill) => (
-                <li
-                  key={skill}
-                  className="flex justify-center items-center text-white text-decoration-none px-4 py-2 border-b border-[#fafafa33] border-[1px] rounded-[50px] bg-[#ff4d4d0d] hover:bg-[#ff4d4d1a] transition-all delay-100"
-                >
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="flex flex-col gap-1">
-            <p className="text-xl font-semibold text-[#fafafa99] letter-spacing-[.2em] mb-3 font-geist-mono">
-              SERVICES
-            </p>
-            <ul className="list-none list-inside flex flex-col gap-2 ml-5">
-              {services.map((service) => (
-                <li key={service} className="flex gap-2">
-                  <ChevronsRight className="text-red-400" />
-                  {service}
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="flex flex-col justify-center gap-7 w-1/2 relative">
+          <div
+            style={{ backgroundImage: "url(dp.jpg)" }}
+            className="w-[25rem] h-[25rem] bg-cover bg-center rounded-full"
+          ></div>
         </div>
       </div>
     </div>

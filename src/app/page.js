@@ -6,7 +6,7 @@ import CurrentTech from "@/components/CurrentTech";
 import Experience from "@/components/Experience";
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center gap-4 mt-35 w-[80%] relative">
+    <div className="flex flex-col justify-center items-center gap-14 mt-35 w-[80%] relative">
       <AboutMe />
       <div className="grid grid-cols-1 gap-8 w-[80%]">
         <Experience />

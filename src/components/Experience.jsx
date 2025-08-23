@@ -22,7 +22,14 @@ function Experience() {
         {/* Louder */}
         <div className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-gray-600">
           <div className="flex items-start mb-2">
-            <div className="bg-white rounded-full p-2 mr-4 w-24 h-24 flex-shrink-0 flex items-center justify-center overflow-hidden"></div>
+            <div
+              style={{
+                backgroundImage: "url('Logos/louder.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              className="bg-white rounded-full p-2 mr-4 w-24 h-24 flex-shrink-0 flex items-center justify-center overflow-hidden"
+            ></div>
             <div className="flex-grow">
               <p className="text-2xl font-semibold text-gray-100">
                 Full-Stack Developer
@@ -92,7 +99,14 @@ function Experience() {
         {/* YUVA */}
         <div className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-gray-600">
           <div className="flex items-start mb-2">
-            <div className="bg-white rounded-full p-2 mr-4 w-24 h-24 flex-shrink-0 flex items-center justify-center overflow-hidden"></div>
+            <div
+              style={{
+                backgroundImage: "url('Logos/yuva.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              className="bg-white rounded-full p-2 mr-4 w-24 h-24 flex-shrink-0 flex items-center justify-center overflow-hidden"
+            ></div>
             <div className="flex-grow">
               <p className="text-2xl font-semibold text-gray-100">
                 Core Graphics Designer
@@ -139,6 +153,82 @@ function Experience() {
             </span>
             <span className="inline-block bg-[rgba(34,197,94,0.3)] bg-opacity-30 px-3 py-1.5 text-xs font-medium text-[rgba(34,197,94,1)] mr-2 mb-2 rounded-full">
               Graphic Designing
+            </span>
+            <span className="inline-block bg-[rgba(34,197,94,0.3)] bg-opacity-30 px-3 py-1.5 text-xs font-medium text-[rgba(34,197,94,1)] mr-2 mb-2 rounded-full">
+              Logo Design
+            </span>
+            <span className="inline-block bg-[rgba(34,197,94,0.3)] bg-opacity-30 px-3 py-1.5 text-xs font-medium text-[rgba(34,197,94,1)] mr-2 mb-2 rounded-full">
+              Team Work
+            </span>
+          </div>
+        </div>
+
+        {/* QuikSort */}
+        <div className="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-gray-600">
+          <div className="flex items-start mb-2">
+            <div
+              style={{
+                backgroundImage: "url('Logos/quiksort.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              className="bg-white rounded-full p-2 mr-4 w-24 h-24 flex-shrink-0 flex items-center justify-center overflow-hidden"
+            ></div>
+            <div className="flex-grow">
+              <p className="text-2xl font-semibold text-gray-100">
+                Technical & Creative Head
+              </p>
+              <p className="text-lg text-gray-300">
+                QuikSort, Ramanujan College &#8226; On-Site
+              </p>
+              <p className="text-gray-400">
+                Nov 2024 - Present &#8226; {monthsSinceOct2024() - 1} months
+              </p>
+            </div>
+          </div>
+          <ul className="space-y-2 text-gray-300 mb-4">
+            <li className="flex items-start before:content-['•'] before:mr-2">
+              Directed 10+ multimedia projects (videos, interactive websites,
+              event graphics), boosting audience engagement by 35%.
+            </li>
+            <li className="flex items-start before:content-['•'] before:mr-2">
+              Supervised creation of 30+ digital assets, ensuring timely
+              delivery and full alignment with TEDx branding standards.
+            </li>
+            <li className="flex items-start before:content-['•'] before:mr-2">
+              Guided a team of 8 creatives and developers, increasing
+              productivity by 15% through improved workflows and collaboration
+              tools.
+            </li>
+            <li className="flex items-start before:content-['•'] before:mr-2">
+              Designed captivating visual content and storytelling strategies,
+              leading to a 30% increase in audience retention.
+            </li>
+          </ul>
+          <div className="flex flex-wrap">
+            <span className="inline-block bg-[rgba(34,197,94,0.3)] bg-opacity-30 px-3 py-1.5 text-xs font-medium text-[rgba(34,197,94,1)] mr-2 mb-2 rounded-full">
+              Team Building
+            </span>
+            <span className="inline-block bg-[rgba(34,197,94,0.3)] bg-opacity-30 px-3 py-1.5 text-xs font-medium text-[rgba(34,197,94,1)] mr-2 mb-2 rounded-full">
+              Leadership
+            </span>
+            <span className="inline-block bg-[rgba(34,197,94,0.3)] bg-opacity-30 px-3 py-1.5 text-xs font-medium text-[rgba(34,197,94,1)] mr-2 mb-2 rounded-full">
+              Management
+            </span>
+            <span className="inline-block bg-[rgba(34,197,94,0.3)] bg-opacity-30 px-3 py-1.5 text-xs font-medium text-[rgba(34,197,94,1)] mr-2 mb-2 rounded-full">
+              Graphic Designing
+            </span>
+            <span className="inline-block bg-[rgba(34,197,94,0.3)] bg-opacity-30 px-3 py-1.5 text-xs font-medium text-[rgba(34,197,94,1)] mr-2 mb-2 rounded-full">
+              Canva
+            </span>
+            <span className="inline-block bg-[rgba(34,197,94,0.3)] bg-opacity-30 px-3 py-1.5 text-xs font-medium text-[rgba(34,197,94,1)] mr-2 mb-2 rounded-full">
+              Graphics
+            </span>
+            <span className="inline-block bg-[rgba(34,197,94,0.3)] bg-opacity-30 px-3 py-1.5 text-xs font-medium text-[rgba(34,197,94,1)] mr-2 mb-2 rounded-full">
+              Communication
+            </span>
+            <span className="inline-block bg-[rgba(34,197,94,0.3)] bg-opacity-30 px-3 py-1.5 text-xs font-medium text-[rgba(34,197,94,1)] mr-2 mb-2 rounded-full">
+              Presentation Skills
             </span>
             <span className="inline-block bg-[rgba(34,197,94,0.3)] bg-opacity-30 px-3 py-1.5 text-xs font-medium text-[rgba(34,197,94,1)] mr-2 mb-2 rounded-full">
               Logo Design

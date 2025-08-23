@@ -10,6 +10,7 @@ import ReactLogo from "../../public/Logos/React";
 import TensorflowLogo from "../../public/Logos/Tensorflow";
 import PythonLogo from "../../public/Logos/Python";
 import JupyterLogo from "../../public/Logos/Jupyter";
+import FastAPILogo from "../../public/Logos/FastAPI";
 
 function CurrentTech() {
   const [showMore, setShowMore] = useState(false);
@@ -148,6 +149,19 @@ function CurrentTech() {
         {/* ------Extra Skills (hidden until expanded)------- */}
         {showMore && (
           <>
+            {/* ------FastAPI------- */}
+            <div className="flex flex-1 gap-5 p-2.5 rounded-xl border border-[rgba(26,26,26,1)] dark:border-dark-200 bg-[rgba(26,26,26,1)] dark:bg-dark-200 hover:bg-[rgba(38,38,38,1)] dark:hover:bg-dark-300 hover:border-[rgba(77,77,77,1)] dark:hover:border-dark-700 transition-colors duration-200 justify-start items-center">
+              <div className="p-3 bg-[rgba(10,132,207,0.2)] rounded-lg w-fit">
+                <FastAPILogo />
+              </div>
+              <div>
+                <h4 className="text-lg font-medium">FastAPI</h4>
+                <p className="text-dark-200/70 dark:text-white/70 text-sm">
+                  Asynchronous, intuitive
+                </p>
+              </div>
+            </div>
+
             {/* ------Python------- */}
             <div className="flex flex-1 gap-5 p-2.5 rounded-xl border border-[rgba(26,26,26,1)] dark:border-dark-200 bg-[rgba(26,26,26,1)] dark:bg-dark-200 hover:bg-[rgba(38,38,38,1)] dark:hover:bg-dark-300 hover:border-[rgba(77,77,77,1)] dark:hover:border-dark-700 transition-colors duration-200 justify-start items-center">
               <div className="p-3 bg-[rgba(207,181,10,0.2)] rounded-lg w-fit">

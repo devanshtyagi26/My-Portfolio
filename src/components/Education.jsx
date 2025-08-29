@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import colleges from "../data/colleges.json";
 
 const ACCENT_COLOR = "#EF4444";
-const BG_COLOR = "#18181B";
-const CARD_BG = "rgba(24,24,27,0.85)";
+const BG_COLOR = "rgba(24, 24, 27,0.7)";
+const CARD_BG = "none";
 const POPUP_BG = "rgba(24,24,27,0.98)";
 const BORDER_COLOR = "rgba(239,68,68,0.18)";
 const FONT_FAMILY_FIRA =

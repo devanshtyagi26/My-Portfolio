@@ -1,15 +1,7 @@
-import {
-  CalendarClock,
-  ChevronsRight,
-  Leaf,
-  MapPin,
-  Terminal,
-} from "lucide-react";
+import { CalendarClock, Leaf, MapPin, Terminal } from "lucide-react";
 import React from "react";
-import { keySkills, services } from "@/data/aboutMe";
-
 const ACCENT_COLOR = "#EF4444";
-const BG_COLOR = "#18181B";
+const BG_COLOR = "rgba(24, 24, 27,0.7)";
 const FONT_FAMILY_FIRA =
   "var(--font-geist-mono), 'Geist Mono', 'Fira Mono', 'Menlo', monospace";
 

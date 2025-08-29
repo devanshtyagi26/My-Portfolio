@@ -1,0 +1,37 @@
+[
+  {
+    "degree": "B.Sc.(Hons.) Computer Science",
+    "college": "Ramanujan College",
+    "university": "University of Delhi",
+    "duration": "2022 - 2026",
+    "logo": "Logos/rcdu.png",
+    "details": [
+      "Studying core subjects of CS including DSA, DBMS, Design Analysis and Algorithm, Operating systems, and Computer architecture.",
+      "Scored an aggregate of 8.95 CGPA till now.",
+      "Graphics Head in QuikSort Society of the college.",
+      "Creative Head in TEDx RamanujanCollege."
+    ]
+  },
+  {
+    "degree": "Senior Secondary",
+    "college": "Divya Public School",
+    "university": "Thanabhawan, Shamli",
+    "duration": "2021 - 2022",
+    "logo": "Logos/dps.jpg",
+    "details": [
+      "Subjects studied: Physics, Chemistry, Maths, English, Computer Science , Hindi.",
+      "School Topper with 93%"
+    ]
+  },
+  {
+    "degree": "High School",
+    "college": "Divya Public School",
+    "university": "Thanabhawan, Shamli",
+    "duration": "2019 - 2020",
+    "logo": "Logos/dps.jpg",
+    "details": [
+      "Subjects studied: Science, Maths, English, Social Studies, English, Hindi, Computer Science.",
+      "School Topper with 94.4%"
+    ]
+  }
+]

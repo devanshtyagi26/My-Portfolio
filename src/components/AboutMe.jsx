@@ -6,47 +6,103 @@ import {
   Terminal,
 } from "lucide-react";
 import React from "react";
-import { keySkills, services } from "@/lib/aboutMe";
+import { keySkills, services } from "@/data/aboutMe";
+
+const ACCENT_COLOR = "#EF4444";
+const BG_COLOR = "#18181B";
+const FONT_FAMILY_FIRA =
+  "var(--font-geist-mono), 'Geist Mono', 'Fira Mono', 'Menlo', monospace";
 
 function AboutMe() {
   return (
-    <div className="font-geist-mono w-[80%]">
-      <p className="text-xl font-semibold text-[#fafafa99] letter-spacing-[.2em] mb-8 font-geist-mono">
+    <div
+      className="font-geist-mono w-[80%]"
+      style={{
+        background: BG_COLOR,
+        borderRadius: "1.5rem",
+        padding: "2.5rem",
+        color: "#F3F4F6",
+        boxShadow: `0 2px 16px 0 ${ACCENT_COLOR}11`,
+      }}
+    >
+      <p
+        className="text-xl font-semibold mb-8 font-geist-mono uppercase tracking-widest"
+        style={{
+          color: ACCENT_COLOR,
+          letterSpacing: ".18em",
+          fontFamily: FONT_FAMILY_FIRA,
+        }}
+      >
         ABOUT ME
       </p>
       <div className="flex gap-8 justify-center items-start">
         <div className="flex flex-col justify-center w-1/2 gap-[2rem]">
-          <p className="text-[3.75rem] font-weight-100 text-gray-800 dark:text-gray-200 tracking-wide font-geist-mono flex flex-col leading-[1]">
+          <p
+            className="text-[3.75rem] font-weight-100 tracking-wide font-geist-mono flex flex-col leading-[1]"
+            style={{ color: "#F3F4F6" }}
+          >
             Hi, I'm
             <br />
-            <span className="text-red-500">Devansh Tyagi</span>
+            <span style={{ color: ACCENT_COLOR }}>Devansh Tyagi</span>
           </p>
           <div className="flex flex-col gap-2">
-            <p className="flex justify-start items-center text-[1.1rem] text-[#fafafa99]">
-              <MapPin className="mr-3 text-red-400" /> Location
+            <p
+              className="flex justify-start items-center text-[1.1rem]"
+              style={{ color: "#a1a1aa" }}
+            >
+              <MapPin className="mr-3" style={{ color: ACCENT_COLOR }} />{" "}
+              Location
             </p>
-            <p className="flex justify-start items-center text-[1.1rem] text-[#fafafa99]">
-              <Leaf className="mr-3 text-red-400" /> Age
+            <p
+              className="flex justify-start items-center text-[1.1rem]"
+              style={{ color: "#a1a1aa" }}
+            >
+              <Leaf className="mr-3" style={{ color: ACCENT_COLOR }} /> Age
             </p>
-            <p className="flex justify-start items-center text-[1.1rem] text-[#fafafa99]">
-              <Terminal className="mr-3 text-red-400" /> Full-Stack
+            <p
+              className="flex justify-start items-center text-[1.1rem]"
+              style={{ color: "#a1a1aa" }}
+            >
+              <Terminal className="mr-3" style={{ color: ACCENT_COLOR }} />{" "}
+              Full-Stack
             </p>
-            <p className="flex justify-start items-center text-[1.1rem] text-[#fafafa99]">
-              <CalendarClock className="mr-3 text-red-400" /> Experience
+            <p
+              className="flex justify-start items-center text-[1.1rem]"
+              style={{ color: "#a1a1aa" }}
+            >
+              <CalendarClock className="mr-3" style={{ color: ACCENT_COLOR }} />{" "}
+              Experience
             </p>
           </div>
-          <p>
+          <p style={{ color: "#d1d5db" }}>
             I'm a passionate developer with a focus on creating dynamic and
             responsive web applications.
           </p>
-          <button className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md">
+          <button
+            className="mt-4 px-4 py-2 rounded-md font-semibold transition-colors duration-200"
+            style={{
+              background: ACCENT_COLOR,
+              color: "#fff",
+              fontFamily: FONT_FAMILY_FIRA,
+              boxShadow: `0 2px 8px 0 ${ACCENT_COLOR}22`,
+              border: `1.5px solid ${ACCENT_COLOR}`,
+            }}
+          >
             Contact Me
           </button>
         </div>
         <div className="flex flex-col justify-center gap-7 w-1/2 relative">
           <div
-            style={{ backgroundImage: "url(dp.jpg)" }}
-            className="w-[25rem] h-[25rem] bg-cover bg-center rounded-full"
+            style={{
+              backgroundImage: "url(dp.jpg)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              borderRadius: "50%",
+              width: "25rem",
+              height: "25rem",
+              border: `3px solid ${ACCENT_COLOR}`,
+              boxShadow: `0 2px 16px 0 ${ACCENT_COLOR}22`,
+            }}
           ></div>
         </div>
       </div>

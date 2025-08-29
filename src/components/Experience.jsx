@@ -10,12 +10,21 @@ function monthsSinceOct2024() {
   return yearsDiff * 12 + monthsDiff + 1;
 }
 
-console.log("Months passed since Oct 2024:", monthsSinceOct2024());
+const ACCENT_COLOR = "#EF4444";
+const FONT_FAMILY_FIRA =
+  "var(--font-geist-mono), 'Geist Mono', 'Fira Mono', 'Menlo', monospace";
 
 function Experience() {
   return (
     <div className="font-geist-mono w-[100%]">
-      <p className="text-xl font-semibold text-[#fafafa99] letter-spacing-[.2em] mb-8 font-geist-mono">
+      <p
+        className="text-xl font-semibold mb-5 font-geist-mono uppercase tracking-widest"
+        style={{
+          color: ACCENT_COLOR,
+          fontFamily: FONT_FAMILY_FIRA,
+          letterSpacing: ".18em",
+        }}
+      >
         EXPERIENCE
       </p>
       <div className="flex flex-col gap-15 justify-self-center self-center w-[80%]">

@@ -12,14 +12,25 @@ import PythonLogo from "../../public/Logos/Python";
 import JupyterLogo from "../../public/Logos/Jupyter";
 import FastAPILogo from "../../public/Logos/FastAPI";
 
+const ACCENT_COLOR = "#EF4444";
+const FONT_FAMILY_FIRA =
+  "var(--font-geist-mono), 'Geist Mono', 'Fira Mono', 'Menlo', monospace";
+
 function CurrentTech() {
   const [showMore, setShowMore] = useState(false);
   return (
-    <div>
-      <p className="text-xl font-semibold text-[#fafafa99] letter-spacing-[.2em] mb-5 font-geist-mono uppercase">
+    <div style={{ color: "#F3F4F6" }}>
+      <p
+        className="text-xl font-semibold mb-5 font-geist-mono uppercase tracking-widest"
+        style={{
+          fontFamily: FONT_FAMILY_FIRA,
+          color: ACCENT_COLOR,
+          letterSpacing: ".18em",
+        }}
+      >
         Current technologies
       </p>
-      <p>
+      <p className="text-base" style={{ color: "#a1a1aa" }}>
         I specialize in a diverse set of modern technologies that enable me to
         create powerful, efficient, and scalable solutions. Here are some of the
         core technologies I work with:
@@ -36,7 +47,7 @@ function CurrentTech() {
           </div>
           <div>
             <h4 className="text-lg font-medium">JavaScript</h4>
-            <p className="text-dark-200/70 dark:text-white/70 text-sm">
+            <p className="text-sm" style={{ color: "#a1a1aa" }}>
               Promises kept, sometimes
             </p>
           </div>
@@ -49,7 +60,7 @@ function CurrentTech() {
           </div>
           <div>
             <h4 className="text-lg font-medium">React</h4>
-            <p className="text-dark-200/70 dark:text-white/70 text-sm">
+            <p className="text-sm" style={{ color: "#a1a1aa" }}>
               State of the art
             </p>
           </div>
@@ -62,7 +73,7 @@ function CurrentTech() {
           </div>
           <div>
             <h4 className="text-lg font-medium">NextJS</h4>
-            <p className="text-dark-200/70 dark:text-white/70 text-sm">
+            <p className="text-sm" style={{ color: "#a1a1aa" }}>
               SSR without stress
             </p>
           </div>
@@ -75,7 +86,7 @@ function CurrentTech() {
           </div>
           <div>
             <h4 className="text-lg font-medium">Figma</h4>
-            <p className="text-dark-200/70 dark:text-white/70 text-sm">
+            <p className="text-sm" style={{ color: "#a1a1aa" }}>
               Shapes into stories
             </p>
           </div>
@@ -88,7 +99,7 @@ function CurrentTech() {
           </div>
           <div>
             <h4 className="text-lg font-medium">NodeJS</h4>
-            <p className="text-dark-200/70 dark:text-white/70 text-sm">
+            <p className="text-sm" style={{ color: "#a1a1aa" }}>
               Async all day
             </p>
           </div>
@@ -101,7 +112,7 @@ function CurrentTech() {
           </div>
           <div>
             <h4 className="text-lg font-medium">MongoDB</h4>
-            <p className="text-dark-200/70 dark:text-white/70 text-sm">
+            <p className="text-sm" style={{ color: "#a1a1aa" }}>
               Where JSON feels home
             </p>
           </div>
@@ -114,7 +125,7 @@ function CurrentTech() {
           </div>
           <div>
             <h4 className="text-lg font-medium">Tailwind</h4>
-            <p className="text-dark-200/70 dark:text-white/70 text-sm">
+            <p className="text-sm" style={{ color: "#a1a1aa" }}>
               Styling at light speed
             </p>
           </div>
@@ -127,7 +138,7 @@ function CurrentTech() {
           </div>
           <div>
             <h4 className="text-lg font-medium">Jupyter</h4>
-            <p className="text-dark-200/70 dark:text-white/70 text-sm">
+            <p className="text-sm" style={{ color: "#a1a1aa" }}>
               Where data speaks
             </p>
           </div>
@@ -140,7 +151,7 @@ function CurrentTech() {
           </div>
           <div>
             <h4 className="text-lg font-medium">Tensorflow</h4>
-            <p className="text-dark-200/70 dark:text-white/70 text-sm">
+            <p className="text-sm" style={{ color: "#a1a1aa" }}>
               Training never stops
             </p>
           </div>
@@ -156,7 +167,7 @@ function CurrentTech() {
               </div>
               <div>
                 <h4 className="text-lg font-medium">FastAPI</h4>
-                <p className="text-dark-200/70 dark:text-white/70 text-sm">
+                <p className="text-sm" style={{ color: "#a1a1aa" }}>
                   Asynchronous, intuitive
                 </p>
               </div>
@@ -169,7 +180,7 @@ function CurrentTech() {
               </div>
               <div>
                 <h4 className="text-lg font-medium">Python</h4>
-                <p className="text-dark-200/70 dark:text-white/70 text-sm">
+                <p className="text-sm" style={{ color: "#a1a1aa" }}>
                   AI’s favorite toolkit
                 </p>
               </div>
@@ -182,7 +193,7 @@ function CurrentTech() {
               </div>
               <div>
                 <h4 className="text-lg font-medium">Tailwind</h4>
-                <p className="text-dark-200/70 dark:text-white/70 text-sm">
+                <p className="text-sm" style={{ color: "#a1a1aa" }}>
                   Styling at light speed
                 </p>
               </div>
@@ -192,7 +203,15 @@ function CurrentTech() {
       </div>
       <div className="flex justify-center mt-6">
         <button
-          className="px-6 py-2 rounded-md bg-gray-900 text-white font-semibold shadow hover:bg-gray-800 transition-colors duration-200 border border-gray-700"
+          className="px-6 py-2 rounded-md font-semibold shadow transition-colors duration-200 border hover:border-[rgba(77,77,77,1)] dark:hover:border-dark-700"
+          style={{
+            background: ACCENT_COLOR,
+            color: "#fff",
+            border: `1.5px solid ${ACCENT_COLOR}`,
+            fontFamily: FONT_FAMILY_FIRA,
+            boxShadow: `0 2px 8px 0 ${ACCENT_COLOR}22`,
+            cursor: "pointer",
+          }}
           onClick={() => setShowMore((v) => !v)}
         >
           {showMore ? "View Less" : "View More"}

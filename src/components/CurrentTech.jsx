@@ -203,11 +203,9 @@ function CurrentTech() {
       </div>
       <div className="flex justify-center mt-6">
         <button
-          className="px-6 py-2 rounded-md font-semibold shadow transition-colors duration-200 border hover:border-[rgba(77,77,77,1)] dark:hover:border-dark-700"
+          className="px-6 bg-[#EF4444] hover:bg-[#d32f2f] py-2 rounded-md font-semibold shadow transition-colors duration-200 border-[#EF4444] border hover:border-[rgba(77,77,77,1)] dark:hover:border-dark-700"
           style={{
-            background: ACCENT_COLOR,
             color: "#fff",
-            border: `1.5px solid ${ACCENT_COLOR}`,
             fontFamily: FONT_FAMILY_FIRA,
             boxShadow: `0 2px 8px 0 ${ACCENT_COLOR}22`,
             cursor: "pointer",

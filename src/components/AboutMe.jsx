@@ -70,18 +70,30 @@ function AboutMe() {
             I'm a passionate developer with a focus on creating dynamic and
             responsive web applications.
           </p>
-          <button
-            className="mt-4 px-4 py-2 rounded-md font-semibold transition-colors duration-200"
-            style={{
-              background: ACCENT_COLOR,
-              color: "#fff",
-              fontFamily: FONT_FAMILY_FIRA,
-              boxShadow: `0 2px 8px 0 ${ACCENT_COLOR}22`,
-              border: `1.5px solid ${ACCENT_COLOR}`,
-            }}
-          >
-            Contact Me
-          </button>
+          <div className="flex w-full gap-4">
+            <button
+              className="mt-4 bg-[#EF4444] hover:bg-[#d32f2f] px-4 py-2 rounded-md font-semibold transition-colors duration-200 cursor-pointer"
+              style={{
+                color: "#fff",
+                fontFamily: FONT_FAMILY_FIRA,
+                boxShadow: `0 2px 8px 0 ${ACCENT_COLOR}22`,
+                border: `1.5px solid ${ACCENT_COLOR}`,
+              }}
+            >
+              Contact Me
+            </button>
+            <button
+              className="mt-4 px-4 py-2 rounded-md font-semibold transition-colors duration-200 cursor-pointer hover:bg-[rgba(255,255,255,0.1)]"
+              style={{
+                color: "#fff",
+                fontFamily: FONT_FAMILY_FIRA,
+                boxShadow: `0 2px 8px 0 ${ACCENT_COLOR}22`,
+                border: `1.5px solid ${ACCENT_COLOR}`,
+              }}
+            >
+              Download CV
+            </button>
+          </div>
         </div>
         <div className="flex flex-col justify-center gap-7 w-1/2 relative">
           <div

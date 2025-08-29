@@ -31,7 +31,6 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="flex items-center gap-[3rem]">
           <NavMenu className="hidden md:block" style={{ background: "none" }} />
-          <ToggleMode />
           {/* Mobile Menu */}
           <div className="md:hidden">
             <NavigationSheet />
